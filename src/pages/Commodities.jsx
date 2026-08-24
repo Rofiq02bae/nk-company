@@ -4,10 +4,21 @@ import { Cta, CommodityAsset, Meta, Placeholder } from '../components/ui'
 import Reveal from '../components/Reveal'
 
 function ProductVisual({ product }) {
+  const visual = product.visual || { scale: 1, x: 0, y: 0 }
+
   return (
     <div className="showcase__visual" style={{ background: product.orb }}>
       <span className="showcase__index">{product.index}</span>
-      <CommodityAsset product={product} className="showcase__cutout" />
+      <div
+        className="showcase__asset-layer"
+        style={{
+          '--product-visual-scale': visual.scale,
+          '--product-visual-x': `${visual.x}px`,
+          '--product-visual-y': `${visual.y}px`,
+        }}
+      >
+        <CommodityAsset product={product} className="showcase__cutout" />
+      </div>
     </div>
   )
 }

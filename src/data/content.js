@@ -43,6 +43,16 @@ export const IMAGE_ASSETS = {
   },
 }
 
+// Perceived-size tuning for the transparent commodity cutouts. These values
+// compensate for each source PNG's visible bounds without editing the assets.
+export const COMMODITY_VISUALS = {
+  'black-pepper': { scale: 1.05, x: 0, y: 0 },
+  'white-pepper': { scale: 1.1, x: -16, y: -12 },
+  cloves: { scale: 0.9, x: 0, y: 0 },
+  vetiver: { scale: 1.12, x: 8, y: -10 },
+  'areca-nut': { scale: 1.15, x: 0, y: -3 },
+}
+
 // Commodity showcase (order per pages/commodities.md)
 // `image` points to local transparent cutouts in site/public/assets/images/commodities/.
 export const COMMODITIES = [
@@ -54,6 +64,7 @@ export const COMMODITIES = [
     origin: 'Indonesia',
     image: '/assets/images/commodities/black-pepper-transparent.png',
     imageReference: 'https://imagemo.studio/png/black-pepper-spices-isolated-on-transparent-background-9513',
+    visual: COMMODITY_VISUALS['black-pepper'],
     orb: 'radial-gradient(circle at 50% 40%, #2c2c27 0%, #0e0e0c 70%)',
     cutFill: '#e8e2d3',
     info: 'The world’s most traded spice — bold, aromatic and deeply warming.',
@@ -67,6 +78,7 @@ export const COMMODITIES = [
     image: '/assets/images/commodities/white-pepper-transparent.png',
     imageReference: '',
     imageSearchTargets: ['white peppercorns isolated transparent PNG', 'white pepper pile transparent background', 'Muntok white pepper isolated'],
+    visual: COMMODITY_VISUALS['white-pepper'],
     orb: 'radial-gradient(circle at 50% 40%, #efe7d3 0%, #d3c9ad 70%)',
     cutFill: '#171717',
     info: 'A fermented peppercorn prized for clean heat and a pale, refined finish.',
@@ -79,6 +91,7 @@ export const COMMODITIES = [
     origin: 'Indonesia',
     image: '/assets/images/commodities/cloves-transparent.png',
     imageReference: 'https://www.hiclipart.com/free-transparent-background-png-clipart-jcdma',
+    visual: COMMODITY_VISUALS.cloves,
     orb: 'radial-gradient(circle at 50% 40%, #7a5638 0%, #472d15 70%)',
     cutFill: '#f0e7d6',
     info: 'Intensely aromatic dried flower buds of the clove tree.',
@@ -91,6 +104,7 @@ export const COMMODITIES = [
     origin: 'Indonesia',
     image: '/assets/images/commodities/vetiver-transparent.png',
     imageReference: 'https://themandara.com/products/radiance-healthy-skin-bath-powder',
+    visual: COMMODITY_VISUALS.vetiver,
     orb: 'radial-gradient(circle at 50% 40%, #1e4a36 0%, #0d2a1c 70%)',
     cutFill: '#e8e2d3',
     info: 'An aromatic grass root valued for its earthy, long-lasting fragrance.',
@@ -103,6 +117,7 @@ export const COMMODITIES = [
     origin: 'Indonesia',
     image: '/assets/images/commodities/areca-nut-transparent.png',
     imageReference: 'https://www.gettyimages.com/',
+    visual: COMMODITY_VISUALS['areca-nut'],
     orb: 'radial-gradient(circle at 50% 40%, #8a6440 0%, #57391d 70%)',
     cutFill: '#f0e7d6',
     info: 'A refreshment crop with deep cultural and commercial roots across Asia.',
