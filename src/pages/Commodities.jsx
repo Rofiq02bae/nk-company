@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react'
-import { COMMODITIES, COMMODITIES_PAGE_COPY } from '../data/content'
+import { COMMODITIES, COMMODITIES_PAGE_COPY, IMAGE_ASSETS } from '../data/content'
 import { Cta, CommodityAsset, Meta, Placeholder } from '../components/ui'
 import Reveal from '../components/Reveal'
 
@@ -61,7 +61,7 @@ export default function Commodities() {
   return (
     <div className="commodities-page">
       <section className="page-hero page-hero--commodities">
-        <div className="page-hero__media"><Placeholder tone="brown" label="Indonesian spice harvest · image placeholder" /></div>
+        <div className="page-hero__media"><Placeholder src={IMAGE_ASSETS.commodities.spices} tone="brown" label="Indonesian spice harvest · image placeholder" /></div>
         <div className="page-hero__scrim" />
         <div className="container page-hero__inner">
           <Meta>{COMMODITIES_PAGE_COPY.hero.eyebrow}</Meta>
@@ -71,6 +71,9 @@ export default function Commodities() {
       </section>
 
       <section className="section on-dark showcase-section">
+        <div className="showcase-section__background" aria-hidden="true">
+          <img src={IMAGE_ASSETS.hero.agriculture} alt="" />
+        </div>
         <div className="container">
           <Reveal><Meta>01 / Interactive showcase</Meta></Reveal>
           <div className="showcase-layout">

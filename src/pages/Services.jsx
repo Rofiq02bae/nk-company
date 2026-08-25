@@ -72,7 +72,7 @@ export default function Services() {
         <div className="container cta-band__inner">
           <Meta>04 / Partnership</Meta>
           <h2>Build a long-term agribusiness partnership.</h2>
-          <Cta to="/contact" variant="inverse">Talk to PT Agro</Cta>
+          <Cta to="/contact" variant="inverse">Talk to PT. Nalar Kreatif Nusantara</Cta>
         </div>
       </section>
     </div>

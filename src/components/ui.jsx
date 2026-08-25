@@ -16,7 +16,7 @@ export function Cta({ to, variant = 'primary', children }) {
 }
 
 // Editorial placeholder media. Pass `src` to render a real image instead of the
-// gradient block — this is the swap point for real PT Agro photography.
+// gradient block — this is the swap point for real PT. Nalar Kreatif Nusantara photography.
 export function Placeholder({ tone = 'warm', label, src, alt, className = '' }) {
   const [imageFailed, setImageFailed] = useState(false)
 

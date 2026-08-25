@@ -1,4 +1,4 @@
-// Central content + data for the PT Agro site.
+// Central content + data for PT. Nalar Kreatif Nusantara.
 // Content truth comes from the source company profile (references/source-company-profile.md).
 // Do not add factual claims not supported by the source without verification.
 
@@ -9,7 +9,7 @@ export const HOME_COPY = {
     headline: 'ROOTED IN NUSANTARA. GROWN FOR THE WORLD.',
     body: "From Indonesia's fertile landscapes, we connect carefully sourced agricultural commodities with partners across global markets.",
     primaryCta: 'EXPLORE OUR COMMODITIES',
-    secondaryCta: 'ABOUT PT AGRO',
+    secondaryCta: 'ABOUT PT. NALAR KREATIF NUSANTARA',
   },
   statement: {
     eyebrow: 'FROM ORIGIN TO MARKET',
@@ -23,7 +23,7 @@ export const HOME_COPY = {
     cta: 'VIEW ALL COMMODITIES',
   },
   why: {
-    eyebrow: 'WHY PT AGRO',
+    eyebrow: 'WHY PT. NALAR KREATIF NUSANTARA',
     headline: 'Closer to the source. Closer to what matters.',
     body: 'We believe reliable agricultural trade begins with understanding where products come from, how they are handled, and who stands behind them.',
   },
@@ -38,7 +38,7 @@ export const COMPANY_COPY = {
   hero: {
     eyebrow: 'WHO WE ARE',
     headline: 'Built around the value of origin.',
-    body: 'PT Agro connects Indonesian agricultural resources with businesses looking for dependable products, sourcing, and long-term partnerships.',
+    body: 'PT. Nalar Kreatif Nusantara connects Indonesian agricultural resources with businesses looking for dependable products, sourcing, and long-term partnerships.',
   },
   story: {
     headline: 'From the field to the wider world.',
@@ -71,7 +71,8 @@ export const SERVICES_PAGE_COPY = {
 }
 
 export const FOOTER_COPY = {
-  brand: 'PT AGRO',
+  brand: 'PT NALAR KREATIF NUSANTARA',
+  brandLines: ['PT NALAR KREATIF', 'NUSANTARA'],
   tagline: TAGLINE,
   navigationHeading: 'EXPLORE',
 }
@@ -85,7 +86,7 @@ export const NAV = [
 ]
 
 export const COMPANY = {
-  name: 'PT Agro',
+  name: 'PT. Nalar Kreatif Nusantara',
   tagline: TAGLINE,
   founded: 'May 2026',
   location: 'Yogyakarta, Indonesia',
@@ -103,6 +104,9 @@ export const IMAGE_ASSETS = {
     story: '/assets/images/company/company-story.jpg',
     farmer: '/assets/images/company/company-farmer.jpeg',
     team: '/assets/images/company/company-team.jpg',
+  },
+  commodities: {
+    spices: '/assets/images/commodities/commodities-spices.jpg',
   },
   services: {
     cultivation: '/assets/images/services/cultivation.jpg',
@@ -197,9 +201,10 @@ export const COMMODITIES = [
 ]
 
 export const WHY_US = [
-  { label: 'SOURCE', title: 'Know the origin.', text: 'We stay close to the agricultural sources behind the commodities we bring to market.' },
-  { label: 'QUALITY', title: 'Respect the product.', text: 'Careful handling and consistent standards help preserve the character of every commodity.' },
-  { label: 'PARTNERSHIP', title: 'Build beyond the transaction.', text: 'We aim for dependable relationships with growers, suppliers, and international partners.' },
+  { label: 'SOURCE', title: 'Agricultural Excellence', text: "We cultivate Indonesia's finest spices and botanical crops through sustainable practices that prioritize quality, consistency, and environmental stewardship." },
+  { label: 'QUALITY', title: 'Reliable Partnerships', text: 'We build long-term collaborations with farmers, suppliers, and business partners based on trust, fairness, and shared growth.' },
+  { label: 'INNOVATION', title: 'Innovation-Driven Farming', text: "By integrating modern cultivation techniques with local agricultural wisdom, we continuously improve productivity while preserving the authenticity of Indonesia's botanical heritage." },
+  { label: 'PARTNERSHIP', title: 'Global Quality Commitment', text: "From PGI-recognized Muntok White Pepper to high-eugenol NTT cloves, every commodity we produce is developed with a commitment to traceability and international quality standards." },
 ]
 
 export const VALUE_CHAIN = [

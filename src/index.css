@@ -1,5 +1,5 @@
 /* =========================================================================
-   PT AGRO — Design System
+   PT. NALAR KREATIF NUSANTARA — Design System
    Authority: 00-design-system.md
    Premium Agricultural Commodity Brand × Editorial Product Showcase
    ========================================================================= */
@@ -342,6 +342,10 @@ h4 {
   will-change: transform, opacity;
 }
 
+.hero-zoom.page-hero--home .page-hero__inner {
+  transform: translate3d(0, calc(var(--hero-copy-y, 0px) - clamp(1.25rem, 3vw, 3rem)), 0);
+}
+
 .page-hero .meta {
   animation: hero-rise var(--dur-hero) var(--ease) 120ms both;
 }
@@ -440,10 +444,20 @@ h4 {
 }
 
 .nav__brand {
+  display: inline-flex;
+  align-items: center;
+  width: 34px;
+  height: 34px;
   font-family: var(--font-display);
   font-weight: 600;
   letter-spacing: 0.02em;
   font-size: 1.05rem;
+}
+
+.nav__brand img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
 .nav__links {
@@ -514,6 +528,20 @@ h4 {
   grid-template-columns: 1fr;
   gap: 3rem;
   padding-bottom: 4rem;
+}
+
+.footer__brand {
+  display: grid;
+  gap: 0;
+  font-family: var(--font-display);
+  font-size: 1.4rem;
+  font-weight: 600;
+  line-height: 1.05;
+  letter-spacing: 0.02em;
+}
+
+.footer__tagline {
+  margin-top: 1rem;
 }
 
 .footer__nav {
@@ -1046,7 +1074,35 @@ h4 {
 
 /* Commodities ----------------------------------------------------------- */
 .showcase-section {
+  position: relative;
   overflow: hidden;
+  isolation: isolate;
+}
+
+.showcase-section__background {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.showcase-section__background::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(243, 240, 231, 0.78), rgba(250, 249, 245, 0.86));
+}
+
+.showcase-section__background img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.42;
+}
+
+.showcase-section > .container {
+  position: relative;
+  z-index: 1;
 }
 
 .commodities-page .showcase-section {
@@ -1162,6 +1218,24 @@ h4 {
 }
 
 /* Services -------------------------------------------------------------- */
+.page-hero--services .page-hero__inner {
+  text-align: center;
+}
+
+.page-hero--services h1 {
+  max-width: 24ch;
+  margin-inline: auto;
+  font-size: clamp(2.25rem, 5.2vw, 5.25rem);
+}
+
+.page-hero--services .lead {
+  margin-inline: auto;
+}
+
+.services-page .section-title {
+  font-size: clamp(1.8rem, 3.8vw, 3.15rem);
+}
+
 .chain-section .section-title {
   max-width: 42rem;
   margin-top: 1.5rem;

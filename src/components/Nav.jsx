@@ -16,7 +16,7 @@ export default function Nav() {
     <header className={`nav ${solid ? 'nav--solid' : 'nav--over'}`}>
       <div className="container nav__inner">
         <Link to="/" className="nav__brand">
-          PT AGRO
+          <img src="/favicon/favicon.png" alt="PT. Nalar Kreatif Nusantara" />
         </Link>
 
         <nav className="nav__links">

@@ -7,10 +7,10 @@ export default function Footer() {
       <div className="container">
         <div className="footer__grid">
           <div>
-            <div className="nav__brand" style={{ fontSize: '1.4rem' }}>
-              {FOOTER_COPY.brand}
+            <div className="footer__brand" aria-label={FOOTER_COPY.brand}>
+              {FOOTER_COPY.brandLines.map((line) => <span key={line}>{line}</span>)}
             </div>
-            <p className="lead" style={{ color: 'var(--muted-inverse)', marginTop: '1rem' }}>
+            <p className="lead footer__tagline" style={{ color: 'var(--muted-inverse)' }}>
               {FOOTER_COPY.tagline}
             </p>
           </div>

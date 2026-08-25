@@ -59,7 +59,7 @@ export default function Contact() {
       </section>
 
       <section className="contact-close">
-        <div className="container"><Meta>04 / PT Agro</Meta><p>Premium agricultural commodities, rooted in Nusantara.</p><Cta to="/commodities" variant="outline">Explore commodities</Cta></div>
+        <div className="container"><Meta>04 / PT. Nalar Kreatif Nusantara</Meta><p>Premium agricultural commodities, rooted in Nusantara.</p><Cta to="/commodities" variant="outline">Explore commodities</Cta></div>
       </section>
     </div>
   )

@@ -6,7 +6,7 @@ export default function Company() {
   return (
     <div className="company-page">
       <section className="page-hero page-hero--company">
-        <div className="page-hero__media"><Placeholder src={IMAGE_ASSETS.company.story} tone="green" label="PT Agro company story" alt="Agricultural landscape representing PT Agro's company story" /></div>
+        <div className="page-hero__media"><Placeholder src={IMAGE_ASSETS.company.story} tone="green" label="PT. Nalar Kreatif Nusantara company story" alt="Agricultural landscape representing PT. Nalar Kreatif Nusantara's company story" /></div>
         <div className="page-hero__scrim" />
         <div className="container page-hero__inner">
           <Meta>{COMPANY_COPY.hero.eyebrow}</Meta>
@@ -21,7 +21,7 @@ export default function Company() {
             <h2 className="section-title">{COMPANY_COPY.story.headline}</h2>
           </Reveal>
           <Reveal delay="1" className="split__media story-copy">
-            <Placeholder src={IMAGE_ASSETS.company.farmer} tone="warm" label="PT Agro farmer partnership" alt="Farmer working in an agricultural field" />
+            <Placeholder src={IMAGE_ASSETS.company.farmer} tone="warm" label="PT. Nalar Kreatif Nusantara farmer partnership" alt="Farmer working in an agricultural field" />
             <p>{COMPANY_COPY.story.body}</p>
           </Reveal>
         </div>
@@ -61,7 +61,7 @@ export default function Company() {
           <Reveal><Meta>04 / Our team</Meta></Reveal>
           <div className="team-grid">
             <Reveal className="team-intro"><h2 className="section-title">People close to the source.</h2></Reveal>
-            <Reveal delay="1" className="team-note"><Placeholder src={IMAGE_ASSETS.company.team} tone="warm" label="PT Agro team" alt="PT Agro team" /><p>Team profiles and photography will be added as verified materials become available.</p></Reveal>
+            <Reveal delay="1" className="team-note"><Placeholder src={IMAGE_ASSETS.company.team} tone="warm" label="PT. Nalar Kreatif Nusantara team" alt="PT. Nalar Kreatif Nusantara team" /><p>Team profiles and photography will be added as verified materials become available.</p></Reveal>
           </div>
         </div>
       </section>
