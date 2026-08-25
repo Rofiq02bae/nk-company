@@ -1,4 +1,4 @@
-import { IMAGE_ASSETS } from '../data/content'
+import { COMPANY_COPY, IMAGE_ASSETS } from '../data/content'
 import { Cta, Meta, Placeholder } from '../components/ui'
 import Reveal from '../components/Reveal'
 
@@ -9,21 +9,20 @@ export default function Company() {
         <div className="page-hero__media"><Placeholder src={IMAGE_ASSETS.company.story} tone="green" label="PT Agro company story" alt="Agricultural landscape representing PT Agro's company story" /></div>
         <div className="page-hero__scrim" />
         <div className="container page-hero__inner">
-          <Meta>Company / Our origin</Meta>
-          <h1>Rooted in Nusantara.</h1>
+          <Meta>{COMPANY_COPY.hero.eyebrow}</Meta>
+          <h1>{COMPANY_COPY.hero.headline}</h1>
+          <p className="lead">{COMPANY_COPY.hero.body}</p>
         </div>
       </section>
 
       <section className="section">
         <div className="container split">
           <Reveal className="split__text">
-            <Meta>01 / About</Meta>
-            <h2 className="section-title">An Indonesian agribusiness with a global outlook.</h2>
+            <h2 className="section-title">{COMPANY_COPY.story.headline}</h2>
           </Reveal>
           <Reveal delay="1" className="split__media story-copy">
             <Placeholder src={IMAGE_ASSETS.company.farmer} tone="warm" label="PT Agro farmer partnership" alt="Farmer working in an agricultural field" />
-            <p>PT Agro works across cultivation, processing and distribution for premium agricultural commodities.</p>
-            <p>Our approach is grounded in sustainable cultivation and long-term partnerships with farmers.</p>
+            <p>{COMPANY_COPY.story.body}</p>
           </Reveal>
         </div>
       </section>

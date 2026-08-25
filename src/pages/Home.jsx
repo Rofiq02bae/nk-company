@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { COMMODITIES, IMAGE_ASSETS, WHY_US } from '../data/content'
+import { COMMODITIES, HOME_COPY, IMAGE_ASSETS, WHY_US } from '../data/content'
 import { Cta, CommodityAsset, Meta, Placeholder } from '../components/ui'
 import HeroZoom from '../components/HeroZoom'
 import Reveal from '../components/Reveal'
@@ -15,11 +15,11 @@ export default function Home() {
         </div>
         <div className="page-hero__scrim" />
         <div className="container page-hero__inner">
-          <Meta>PT Agro / Premium Agricultural Commodities</Meta>
-          <h1>Rooted in Indonesia. Grown for the world.</h1>
+          <h1>{HOME_COPY.hero.headline}</h1>
+          <p className="lead hero-support">{HOME_COPY.hero.body}</p>
           <div className="hero-actions">
-            <Cta to="/commodities" variant="inverse">Explore commodities</Cta>
-            <Link to="/company" className="text-link">About PT Agro <span className="arrow">→</span></Link>
+            <Cta to="/commodities" variant="inverse">{HOME_COPY.hero.primaryCta}</Cta>
+            <Link to="/company" className="text-link">{HOME_COPY.hero.secondaryCta} <span className="arrow">→</span></Link>
           </div>
         </div>
       </HeroZoom>
@@ -27,24 +27,23 @@ export default function Home() {
       <section className="section statement-section">
         <div className="container split">
           <Reveal className="split__text">
-            <Meta>01 / Brand statement</Meta>
-            <h2 className="section-title">From Indonesian soil to global markets.</h2>
+            <Meta>{HOME_COPY.statement.eyebrow}</Meta>
+            <h2 className="section-title">{HOME_COPY.statement.headline}</h2>
           </Reveal>
           <Reveal delay="1" className="split__media statement-copy">
-            <p className="lead">PT Agro connects premium spices, aromatic plants and medicinal crops with partners around the world.</p>
-            <Link to="/services" className="text-link">Discover our capabilities <span className="arrow">→</span></Link>
+            <p className="lead">{HOME_COPY.statement.body}</p>
           </Reveal>
         </div>
       </section>
 
       <section className="section on-dark featured-section">
         <div className="container">
-          <Reveal><Meta>02 / Featured commodity</Meta></Reveal>
+          <Reveal><Meta>{HOME_COPY.featured.eyebrow}</Meta></Reveal>
           <div className="featured-grid">
             <Reveal className="featured-copy">
-              <h2 className="section-title">A closer look at what we grow.</h2>
-              <p className="lead">Begin with {featured.name}, one of Indonesia’s most distinctive commodities.</p>
-              <Cta to="/commodities" variant="inverse">View all commodities</Cta>
+              <h2 className="section-title">{HOME_COPY.featured.headline}</h2>
+              <p className="lead">{HOME_COPY.featured.body}</p>
+              <Cta to="/commodities" variant="inverse">{HOME_COPY.featured.cta}</Cta>
             </Reveal>
             <Reveal delay="1" className="featured-product">
               <div className="featured-orb" style={{ background: featured.orb }}>
@@ -62,14 +61,17 @@ export default function Home() {
 
       <section className="section why-section">
         <div className="container">
-          <Reveal><Meta>03 / Why PT Agro</Meta></Reveal>
+          <Reveal><Meta>{HOME_COPY.why.eyebrow}</Meta></Reveal>
           <div className="section-intro section-intro--wide">
-            <Reveal><h2 className="section-title">Built on quality, shaped by partnership.</h2></Reveal>
+            <Reveal>
+              <h2 className="section-title">{HOME_COPY.why.headline}</h2>
+              <p className="lead">{HOME_COPY.why.body}</p>
+            </Reveal>
           </div>
           <div className="principles-grid">
             {WHY_US.map((item, index) => (
               <Reveal key={item.title} delay={String(index % 4)} className="principle">
-                <span className="principle__number">0{index + 1}</span>
+                <span className="principle__number">{item.label}</span>
                 <h3>{item.title}</h3>
                 <p>{item.text}</p>
               </Reveal>
@@ -82,9 +84,9 @@ export default function Home() {
         <div className="cta-band__media"><Placeholder src={IMAGE_ASSETS.hero.spices} tone="brown" label="Spice harvest" alt="Indonesian spice harvest" /></div>
         <div className="cta-band__scrim" />
         <div className="container cta-band__inner">
-          <Meta>04 / Start a conversation</Meta>
-          <h2>Let’s grow something global.</h2>
-          <Cta to="/contact" variant="inverse">Make an inquiry</Cta>
+          <h2>{HOME_COPY.cta.headline}</h2>
+          <p className="lead">{HOME_COPY.cta.body}</p>
+          <Cta to="/contact" variant="inverse">{HOME_COPY.cta.label}</Cta>
         </div>
       </section>
     </div>

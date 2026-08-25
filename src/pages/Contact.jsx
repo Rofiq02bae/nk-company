@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { CONTACT_FIELDS, COMPANY, IMAGE_ASSETS } from '../data/content'
+import { CONTACT_COPY, CONTACT_FIELDS, COMPANY, IMAGE_ASSETS } from '../data/content'
 import { Cta, Meta, Placeholder } from '../components/ui'
 import Reveal from '../components/Reveal'
 
@@ -16,8 +16,10 @@ export default function Contact() {
       <section className="contact-statement on-dark">
         <div className="contact-statement__media"><Placeholder src={IMAGE_ASSETS.contact.atmosphere} label="Indonesian agricultural landscape" alt="Indonesian agricultural landscape" /></div>
         <div className="container">
-          <Meta>Contact / Start a conversation</Meta>
-          <h1>Let’s grow something global.</h1>
+          <Meta>{CONTACT_COPY.eyebrow}</Meta>
+          <h1>{CONTACT_COPY.headline}</h1>
+          <p className="lead">{CONTACT_COPY.body}</p>
+          <Cta to="/contact" variant="inverse">{CONTACT_COPY.cta}</Cta>
         </div>
       </section>
 

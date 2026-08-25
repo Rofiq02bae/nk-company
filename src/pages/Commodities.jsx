@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react'
-import { COMMODITIES } from '../data/content'
+import { COMMODITIES, COMMODITIES_PAGE_COPY } from '../data/content'
 import { Cta, CommodityAsset, Meta, Placeholder } from '../components/ui'
 import Reveal from '../components/Reveal'
 
@@ -64,8 +64,9 @@ export default function Commodities() {
         <div className="page-hero__media"><Placeholder tone="brown" label="Indonesian spice harvest · image placeholder" /></div>
         <div className="page-hero__scrim" />
         <div className="container page-hero__inner">
-          <Meta>Commodities / Product experience</Meta>
-          <h1>The products of Nusantara.</h1>
+          <Meta>{COMMODITIES_PAGE_COPY.hero.eyebrow}</Meta>
+          <h1>{COMMODITIES_PAGE_COPY.hero.headline}</h1>
+          <p className="lead">{COMMODITIES_PAGE_COPY.hero.body}</p>
         </div>
       </section>
 
@@ -101,8 +102,7 @@ export default function Commodities() {
                 </div>
               </div>
               <div className="showcase__caption">
-                <Meta>{activeProduct.botanical} / {activeProduct.origin}</Meta>
-                <h2>{activeProduct.name}</h2>
+                <Meta>{activeProduct.name}</Meta>
                 <p>{activeProduct.info}</p>
               </div>
             </div>
@@ -154,9 +154,8 @@ export default function Commodities() {
 
       <section className="cta-band cta-band--dark">
         <div className="container cta-band__inner">
-          <Meta>04 / Inquiry</Meta>
-          <h2>Looking for a reliable Indonesian supplier?</h2>
-          <Cta to="/contact" variant="inverse">Inquire now</Cta>
+          <h2>{COMMODITIES_PAGE_COPY.cta}</h2>
+          <Cta to="/contact" variant="inverse">{COMMODITIES_PAGE_COPY.cta}</Cta>
         </div>
       </section>
     </div>

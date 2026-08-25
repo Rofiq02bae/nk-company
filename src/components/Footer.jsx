@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { NAV, COMPANY, TAGLINE } from '../data/content'
+import { NAV, COMPANY, FOOTER_COPY } from '../data/content'
 
 export default function Footer() {
   return (
@@ -8,15 +8,15 @@ export default function Footer() {
         <div className="footer__grid">
           <div>
             <div className="nav__brand" style={{ fontSize: '1.4rem' }}>
-              PT AGRO
+              {FOOTER_COPY.brand}
             </div>
             <p className="lead" style={{ color: 'var(--muted-inverse)', marginTop: '1rem' }}>
-              {TAGLINE}
+              {FOOTER_COPY.tagline}
             </p>
           </div>
 
           <div>
-            <div className="meta">Navigation</div>
+            <div className="meta">{FOOTER_COPY.navigationHeading}</div>
             <ul className="footer__nav" style={{ marginTop: '1.2rem' }}>
               {NAV.map((l) => (
                 <li key={l.to}>
@@ -34,7 +34,7 @@ export default function Footer() {
 
         <div className="footer__bottom">
           <span>© 2026 {COMPANY.name}. All rights reserved.</span>
-          <span>{COMPANY.category}</span>
+          <span>{FOOTER_COPY.tagline}</span>
         </div>
       </div>
     </footer>

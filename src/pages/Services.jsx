@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { SERVICES, IMAGE_ASSETS, VALUE_CHAIN, GLOBAL_SUPPLY } from '../data/content'
+import { SERVICES, IMAGE_ASSETS, SERVICES_PAGE_COPY, VALUE_CHAIN, GLOBAL_SUPPLY } from '../data/content'
 import { Cta, Meta, Placeholder } from '../components/ui'
 import Reveal from '../components/Reveal'
 
@@ -12,8 +12,9 @@ export default function Services() {
         <div className="page-hero__media"><Placeholder src={IMAGE_ASSETS.services.cultivation} tone="green" label="Farm-to-market journey" alt="Agricultural cultivation" /></div>
         <div className="page-hero__scrim" />
         <div className="container page-hero__inner">
-          <Meta>Services / Business capability</Meta>
-          <h1>From cultivation to global delivery.</h1>
+          <Meta>{SERVICES_PAGE_COPY.hero.eyebrow}</Meta>
+          <h1>{SERVICES_PAGE_COPY.hero.headline}</h1>
+          <p className="lead">{SERVICES_PAGE_COPY.hero.body}</p>
         </div>
       </section>
 

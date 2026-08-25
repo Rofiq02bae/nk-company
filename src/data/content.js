@@ -2,7 +2,79 @@
 // Content truth comes from the source company profile (references/source-company-profile.md).
 // Do not add factual claims not supported by the source without verification.
 
-export const TAGLINE = 'Rooted in Nusantara. Grown for the world.'
+export const TAGLINE = 'Indonesian agricultural commodities, connected to global markets.'
+
+export const HOME_COPY = {
+  hero: {
+    headline: 'ROOTED IN NUSANTARA. GROWN FOR THE WORLD.',
+    body: "From Indonesia's fertile landscapes, we connect carefully sourced agricultural commodities with partners across global markets.",
+    primaryCta: 'EXPLORE OUR COMMODITIES',
+    secondaryCta: 'ABOUT PT AGRO',
+  },
+  statement: {
+    eyebrow: 'FROM ORIGIN TO MARKET',
+    headline: 'Agriculture, with an origin worth knowing.',
+    body: 'We work across the agricultural supply chain to bring distinctive Indonesian commodities closer to the markets and partners that value them.',
+  },
+  featured: {
+    eyebrow: 'OUR COMMODITIES',
+    headline: "From Indonesia's soil, to your market.",
+    body: 'Explore a selection of agricultural commodities sourced from Indonesia, each shaped by its origin, cultivation, and careful handling.',
+    cta: 'VIEW ALL COMMODITIES',
+  },
+  why: {
+    eyebrow: 'WHY PT AGRO',
+    headline: 'Closer to the source. Closer to what matters.',
+    body: 'We believe reliable agricultural trade begins with understanding where products come from, how they are handled, and who stands behind them.',
+  },
+  cta: {
+    headline: 'Looking for a reliable source in Indonesia?',
+    body: "Tell us what you are looking for. Let's explore how we can work together.",
+    label: 'START A CONVERSATION',
+  },
+}
+
+export const COMPANY_COPY = {
+  hero: {
+    eyebrow: 'WHO WE ARE',
+    headline: 'Built around the value of origin.',
+    body: 'PT Agro connects Indonesian agricultural resources with businesses looking for dependable products, sourcing, and long-term partnerships.',
+  },
+  story: {
+    headline: 'From the field to the wider world.',
+    body: 'Our work begins with the agricultural resources of Indonesia and extends through sourcing, quality consideration, and market connection.',
+  },
+}
+
+export const COMMODITIES_PAGE_COPY = {
+  hero: {
+    eyebrow: 'THE COMMODITIES',
+    headline: 'Distinct products. One place of origin.',
+    body: 'Discover a selection of Indonesian agricultural commodities, from aromatic spices to botanical products cultivated across the archipelago.',
+  },
+  cta: 'ASK ABOUT AVAILABILITY',
+}
+
+export const CONTACT_COPY = {
+  eyebrow: "LET'S WORK TOGETHER",
+  headline: 'Good partnerships start with a conversation.',
+  body: "Whether you're looking for a specific commodity, exploring sourcing opportunities, or looking for a long-term agricultural partner in Indonesia, we'd like to hear from you.",
+  cta: 'START A CONVERSATION',
+}
+
+export const SERVICES_PAGE_COPY = {
+  hero: {
+    eyebrow: 'WHAT WE DO',
+    headline: 'Connecting agricultural supply with market needs.',
+    body: 'From sourcing to market connection, we help make Indonesian agricultural commodities easier to access for the right partners.',
+  },
+}
+
+export const FOOTER_COPY = {
+  brand: 'PT AGRO',
+  tagline: TAGLINE,
+  navigationHeading: 'EXPLORE',
+}
 
 export const NAV = [
   { to: '/', label: 'Home' },
@@ -59,109 +131,107 @@ export const COMMODITIES = [
   {
     id: 'black-pepper',
     index: '01',
-    name: 'Black Pepper',
+    name: 'BLACK PEPPER',
     botanical: 'Piper nigrum',
     origin: 'Indonesia',
     image: '/assets/images/commodities/black-pepper-transparent.png',
     imageReference: 'https://imagemo.studio/png/black-pepper-spices-isolated-on-transparent-background-9513',
     visual: COMMODITY_VISUALS['black-pepper'],
-    orb: 'radial-gradient(circle at 50% 40%, #2c2c27 0%, #0e0e0c 70%)',
+    orb: 'radial-gradient(circle at 50% 40%, var(--color-charcoal) 0%, var(--color-forest) 70%)',
     cutFill: '#e8e2d3',
-    info: 'The world’s most traded spice — bold, aromatic and deeply warming.',
+    info: "Bold, aromatic, and deeply rooted in Indonesia's spice-growing tradition.",
   },
   {
     id: 'white-pepper',
     index: '02',
-    name: 'White Pepper',
+    name: 'WHITE PEPPER',
     botanical: 'Piper nigrum (processed)',
     origin: 'Indonesia',
     image: '/assets/images/commodities/white-pepper-transparent.png',
     imageReference: '',
     imageSearchTargets: ['white peppercorns isolated transparent PNG', 'white pepper pile transparent background', 'Muntok white pepper isolated'],
     visual: COMMODITY_VISUALS['white-pepper'],
-    orb: 'radial-gradient(circle at 50% 40%, #efe7d3 0%, #d3c9ad 70%)',
+    orb: 'radial-gradient(circle at 50% 40%, var(--color-bg-secondary) 0%, var(--color-sand) 70%)',
     cutFill: '#171717',
-    info: 'A fermented peppercorn prized for clean heat and a pale, refined finish.',
+    info: 'Refined in character, with the distinctive qualities that make Indonesian pepper sought after across markets.',
   },
   {
     id: 'cloves',
     index: '03',
-    name: 'Cloves',
+    name: 'CLOVES',
     botanical: 'Syzygium aromaticum',
     origin: 'Indonesia',
     image: '/assets/images/commodities/cloves-transparent.png',
     imageReference: 'https://www.hiclipart.com/free-transparent-background-png-clipart-jcdma',
     visual: COMMODITY_VISUALS.cloves,
-    orb: 'radial-gradient(circle at 50% 40%, #7a5638 0%, #472d15 70%)',
+    orb: 'radial-gradient(circle at 50% 40%, var(--color-earth) 0%, var(--color-forest) 70%)',
     cutFill: '#f0e7d6',
-    info: 'Intensely aromatic dried flower buds of the clove tree.',
+    info: "Aromatic flower buds with a long-standing place in Indonesia's agricultural heritage.",
   },
   {
     id: 'vetiver',
     index: '04',
-    name: 'Vetiver',
+    name: 'VETIVER',
     botanical: 'Chrysopogon zizanioides',
     origin: 'Indonesia',
     image: '/assets/images/commodities/vetiver-transparent.png',
     imageReference: 'https://themandara.com/products/radiance-healthy-skin-bath-powder',
     visual: COMMODITY_VISUALS.vetiver,
-    orb: 'radial-gradient(circle at 50% 40%, #1e4a36 0%, #0d2a1c 70%)',
+    orb: 'radial-gradient(circle at 50% 40%, var(--color-forest) 0%, var(--color-olive) 70%)',
     cutFill: '#e8e2d3',
-    info: 'An aromatic grass root valued for its earthy, long-lasting fragrance.',
+    info: 'A deeply rooted botanical valued for its distinctive aroma and versatility.',
   },
   {
     id: 'areca-nut',
     index: '05',
-    name: 'Areca Nut',
+    name: 'ARECA NUT',
     botanical: 'Areca catechu',
     origin: 'Indonesia',
     image: '/assets/images/commodities/areca-nut-transparent.png',
     imageReference: 'https://www.gettyimages.com/',
     visual: COMMODITY_VISUALS['areca-nut'],
-    orb: 'radial-gradient(circle at 50% 40%, #8a6440 0%, #57391d 70%)',
+    orb: 'radial-gradient(circle at 50% 40%, var(--color-earth) 0%, var(--color-sand) 70%)',
     cutFill: '#f0e7d6',
-    info: 'A refreshment crop with deep cultural and commercial roots across Asia.',
+    info: "A traditional botanical crop with an established place in Indonesia's agricultural landscape.",
   },
 ]
 
 export const WHY_US = [
-  { title: 'Agricultural Excellence', text: 'A commitment to quality at every stage of cultivation.' },
-  { title: 'Innovation-Driven Farming', text: 'Modern methods applied to traditional Indonesian crops.' },
-  { title: 'Reliable Partnerships', text: 'Long-term relationships with farmers, built on trust.' },
-  { title: 'Global Quality Commitment', text: 'Standards designed for international markets.' },
+  { label: 'SOURCE', title: 'Know the origin.', text: 'We stay close to the agricultural sources behind the commodities we bring to market.' },
+  { label: 'QUALITY', title: 'Respect the product.', text: 'Careful handling and consistent standards help preserve the character of every commodity.' },
+  { label: 'PARTNERSHIP', title: 'Build beyond the transaction.', text: 'We aim for dependable relationships with growers, suppliers, and international partners.' },
 ]
 
 export const VALUE_CHAIN = [
-  { step: '01', label: 'Cultivate' },
-  { step: '02', label: 'Source' },
-  { step: '03', label: 'Quality' },
-  { step: '04', label: 'Export' },
-  { step: '05', label: 'Partnership' },
+  { step: '01', label: 'SOURCE' },
+  { step: '02', label: 'QUALITY' },
+  { step: '03', label: 'SUPPLY' },
+  { step: '04', label: 'MARKET' },
 ]
 
 export const SERVICES = [
   {
-    title: 'Sustainable Cultivation & Farm Development',
-    text: 'Responsible farming practices that nurture the soil and support long-term yields.',
+    title: 'SOURCE',
+    text: 'Connecting with agricultural sources and suppliers to identify products that meet specific market requirements.',
     image: IMAGE_ASSETS.services.cultivation,
   },
   {
-    title: 'Premium Commodity Sourcing',
-    text: 'Direct access to high-grade spices and aromatic crops from Indonesian growers.',
+    title: 'QUALITY',
+    text: 'Paying attention to product condition, handling, and consistency throughout the sourcing process.',
     image: IMAGE_ASSETS.services.sourcing,
   },
   {
-    title: 'Quality Assurance & Export Preparation',
-    text: 'Consistent grading, processing and readiness for international markets.',
+    title: 'SUPPLY',
+    text: 'Coordinating agricultural products around the needs of our business partners.',
     image: IMAGE_ASSETS.services.qualityControl,
   },
   {
-    title: 'Agribusiness Partnership & Export Solutions',
-    text: 'End-to-end collaboration, from farm to global buyer.',
+    title: 'MARKET',
+    text: 'Connecting Indonesian agricultural products with opportunities beyond their place of origin.',
     image: IMAGE_ASSETS.services.export,
   },
 ]
 
-export const GLOBAL_SUPPLY = ['Farm', 'Processing', 'Quality Control', 'Export', 'Global Buyer']
+export const GLOBAL_SUPPLY = ['SOURCE', 'QUALITY', 'SUPPLY', 'MARKET']
 
 export const CONTACT_FIELDS = ['Name', 'Company', 'Email', 'Country', 'Commodity Interest', 'Message']
