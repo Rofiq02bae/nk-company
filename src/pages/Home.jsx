@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom'
 import { COMMODITIES, HOME_COPY, IMAGE_ASSETS, WHY_US } from '../data/content'
 import { Cta, CommodityAsset, Meta, Placeholder } from '../components/ui'
 import HeroZoom from '../components/HeroZoom'
+import LegalDocuments from '../components/LegalDocuments'
 import Reveal from '../components/Reveal'
 
 export default function Home() {
@@ -79,6 +80,8 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <LegalDocuments />
 
       <section className="cta-band">
         <div className="cta-band__media"><Placeholder src={IMAGE_ASSETS.hero.spices} tone="brown" label="Spice harvest" alt="Indonesian spice harvest" /></div>
